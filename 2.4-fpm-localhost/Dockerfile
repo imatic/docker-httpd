@@ -12,4 +12,5 @@ RUN sed -i \
   <FilesMatch \.php$>\n\
     SetHandler "proxy:fcgi://127.0.0.1:9000"\n\
   </FilesMatch>\n\
-</Directory>' >> /usr/local/apache2/conf/httpd.conf
+</Directory>\n\
+IncludeOptional conf/custom_httpd.conf' >> /usr/local/apache2/conf/httpd.conf
