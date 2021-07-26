@@ -6,6 +6,7 @@ RUN sed -i \
   -e 's/^#\(LoadModule .*mod_mpm_event.so\)/\1/' \
   -e 's/^#\(LoadModule .*mod_proxy.so\)/\1/' \
   -e 's/^#\(LoadModule .*mod_proxy_fcgi.so\)/\1/' \
+  -e 's/^#\(LoadModule .*mod_deflate.so\)/\1/' \
   /usr/local/apache2/conf/httpd.conf && \
   echo '<Directory "/usr/local/apache2/htdocs/public">\n\
   AllowOverride All\n\
